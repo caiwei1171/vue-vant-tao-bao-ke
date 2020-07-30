@@ -16,5 +16,8 @@ module.exports = {
         ]
       }
     }
-  }
+  },
+  publicPath:'./',
+　outputDir:'dist',//打包后的文件名
+　assetsDir:'static'//存放静态文件的文件夹
 };

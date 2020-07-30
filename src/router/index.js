@@ -97,11 +97,15 @@ const routes = [
     meta:{
       title:"搜索"
     } 
+  },
+  {
+    path: '/',
+    redirect: '/dist'//重定向的文件夹名
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

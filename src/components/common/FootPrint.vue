@@ -88,7 +88,8 @@ export default {
                 localStorage.removeItem("footprint_goods")
                 this.$toast.success('清除缓存成功！');
                 this.$store.dispatch('footprint/CleanGoods');
-                this.reload()
+                this.isShow = true;
+                // this.reload()//定义在App.vue强制全局刷新页面
             })
         },
         // 返回
